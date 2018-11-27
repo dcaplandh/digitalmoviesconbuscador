@@ -19,7 +19,7 @@ class Movie extends Model
     protected $dates = ['created_at','updated_at','release_date'];
 
     public function nombreParaListar(){
-      return $this->title . " (" . $this->release_date . ")";
+      return $this->title . " (" . $this->release_date->year . ")";
     }
 
 }
